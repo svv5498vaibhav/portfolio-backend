@@ -60,7 +60,7 @@ const seedData = async () => {
     if (achievementCount === 0) {
       await Achievement.create([
         {
-          title: "3x Hackathon Winner",
+          title: "2x Hackathon Winner",
           organization: "Regional Hackathons",
           dateString: "2024 - 2025",
           description: "First place honors in coding sprints. Designed system flow diagrams, implemented fast prototype routing structures, and integrated multi-service backend modules.",
