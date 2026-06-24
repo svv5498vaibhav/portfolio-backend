@@ -30,6 +30,11 @@ app.use(`${API_PREFIX}/achievements`, achievementRoutes);
 app.use(`${API_PREFIX}/contact`, contactRoutes);
 app.use(`${API_PREFIX}/stats`, statsRoutes);
 
+// Health check endpoint for monitoring (keeps Render free-tier awake)
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
+});
+
 // Catch-all 404 handler
 app.use((req, res, next) => {
   res.status(404).json({
