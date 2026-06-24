@@ -27,7 +27,7 @@ const seedData = async () => {
           summary: "A student-focused networking and achievement collaboration platform where students share accomplishments and pitch startup ideas.",
           description: "Built a centralized system mapping achievements to student profiles and providing real-time feed updates using Next.js App Router for server-rendered page assets and custom APIs.\nDeveloped secure student email verification using Node mailer and designed database locking configurations.",
           techStack: ["Next.js", "Express.js", "MongoDB", "Node.js", "Tailwind CSS"],
-          githubUrl: "https://github.com/svv5498/campusx",
+          githubUrl: "https://github.com/svv5498vaibhav/socialcampus",
           liveUrl: "https://campusx.dev",
           views: 154
         },
@@ -47,8 +47,8 @@ const seedData = async () => {
           summary: "This premium SaaS-inspired website showcasing skills, hackathons, and dynamic visitor and view logs.",
           description: "Implemented font optimization structures, server-rendered components, and dynamic asynchronous import setups for overlay modals.\nTargeted 100/100 performance scores on Google Lighthouse.",
           techStack: ["Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion", "MongoDB"],
-          githubUrl: "https://github.com/svv5498/portfolio",
-          liveUrl: "https://vaibhav.dev",
+          githubUrl: "https://github.com/svv5498vaibhav/newportfolio",
+          liveUrl: "https://newportfolio-omega-navy.vercel.app",
           views: 245
         }
       ]);
@@ -60,7 +60,7 @@ const seedData = async () => {
     if (achievementCount === 0) {
       await Achievement.create([
         {
-          title: "2x Hackathon Winner",
+          title: "3x Hackathon Winner",
           organization: "Regional Hackathons",
           dateString: "2024 - 2025",
           description: "First place honors in coding sprints. Designed system flow diagrams, implemented fast prototype routing structures, and integrated multi-service backend modules.",
@@ -76,7 +76,7 @@ const seedData = async () => {
           rank: 2
         },
         {
-          title: "2x Technical Quiz Winner",
+          title: "3x Technical Quiz Winner",
           organization: "Department Tech Fests",
           dateString: "2024",
           description: "First place honors answering technical queries about OOP paradigms, database optimizations (indexing, hashing), and web protocols.",
